@@ -143,7 +143,6 @@ static struct axidma_chan *axidma_get_chan(struct axidma_device *dev,
 static void axidma_dma_callback(void *data)
 {
     struct axidma_cb_data *cb_data;
-// update from 3.x/4.x to 5.x
 #if LINUX_VERSION_CODE < KERNEL_VERSION(4, 20, 0)
     struct siginfo sig_info;
 #else
