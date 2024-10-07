@@ -486,7 +486,11 @@ int axidma_twoway_transfer(axidma_dev_t dev, int tx_channel, void *tx_buf,
     trans.wait = wait;
     trans.tx_channel_id = tx_channel;
     trans.tx_buf = tx_buf;
-    trans.tx_buf_len = tx_len;
+    /** 数据长度有问题？
+     * 
+     * 
+     */
+    trans.tx_buf_len = tx_len; // bug here
     trans.rx_channel_id = rx_channel;
     trans.rx_buf = rx_buf;
     trans.rx_buf_len = rx_len;

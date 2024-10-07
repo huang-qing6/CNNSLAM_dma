@@ -1,3 +1,7 @@
+# 根据使用发现的问题，尝试修改：
+
+two_way_transfer 对小数据传输出错导致驱动失效，不确定是buf问题还是数据大小
+
 # Xilinx AXI DMA Driver and Library (Quick Start Guide)
 
 [![Build Status](https://travis-ci.org/bperez77/xilinx_axidma.svg?branch=master)](https://travis-ci.org/bperez77/xilinx_axidma)
