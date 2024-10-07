@@ -12,10 +12,11 @@
 // Kernel dependencies
 #include <linux/module.h>           // Module init and exit macros
 #include <linux/moduleparam.h>      // Module param macro
+#include <linux/of.h>               // Struct of_device_id
 #include <linux/slab.h>             // Allocation functions
 #include <linux/stat.h>             // Module parameter permission values
 #include <linux/platform_device.h>  // Platform device definitions
-
+#include <linux/of_dma.h>
 // Local dependencies
 #include "axidma.h"                 // Internal definitions
 
